@@ -6,7 +6,7 @@ set -o errexit
 shopt -s nullglob
 shopt -s globstar
 
-packages="openssh-server,rsync"
+packages="openssh-server"
 suite="trusty"
 mirror=$(grep "^deb" /etc/apt/sources.list | head -n1 | cut -d" " -f2)
 
