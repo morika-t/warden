@@ -114,6 +114,7 @@ fi
 
 # Upgrade everything
 chroot <<-EOS
+apt-mark hold udev initramfs-tools
 apt-get upgrade -y
 EOS
 
